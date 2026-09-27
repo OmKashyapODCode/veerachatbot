@@ -22,7 +22,7 @@ class Settings:
     LLM_TIMEOUT: int = int(os.getenv("LLM_TIMEOUT", "20"))  # seconds
 
     # Model name to advertise in /v1/metadata
-    MODEL_NAME: str = os.getenv("MODEL_NAME", "gemini-2.0-flash")
+    MODEL_NAME: str = os.getenv("MODEL_NAME", "gemini-3.8-flash")
 
     # Server
     PORT: int = int(os.getenv("PORT", "8080"))

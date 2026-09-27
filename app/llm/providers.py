@@ -30,7 +30,7 @@ class LLMProvider(ABC):
 class GeminiProvider(LLMProvider):
     def __init__(self, api_key: str, model: str = ""):
         self.api_key = api_key
-        self.model = model or "gemini-2.0-flash"
+        self.model = model or "gemini-3.8-flash"
 
     def name(self) -> str:
         return f"gemini/{self.model}"
